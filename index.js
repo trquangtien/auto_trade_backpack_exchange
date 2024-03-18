@@ -3,8 +3,8 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const backpack_client_1 = require("./backpack_client");
 
 /// EDIT HERE ///
-const API_KEY = "VC2jGOXfxxxxxxxxxxxxxxxxxxxx=";
-const API_SECRET = "EaIvdhigkxxxxxxxxxxxxxxxx=";
+const API_KEY = "";
+const API_SECRET = "";
 /////////////
 
 function delay(ms) {
@@ -150,12 +150,12 @@ const buyfun = async (client) => {
   let { lastPrice } = await client.Ticker({ symbol: "SOL_USDC" });
   let finalLastPrice = lastPrice + 1;
   console.log(getNowFormatDate(), "Price of sol_usdc:", lastPrice);
-  let quantitys = ((userbalance.USDC.available - 2) / lastPrice)
+  let quantitys = ((userbalance.USDC.available - 4) / lastPrice)
     .toFixed(2)
     .toString();
   console.log(
     getNowFormatDate(),
-    `Trade ... ${(userbalance.USDC.available - 2)
+    `Trade ... ${(userbalance.USDC.available - 4)
       .toFixed(2)
       .toString()} $USDC to ${quantitys} $SOL`
   );
