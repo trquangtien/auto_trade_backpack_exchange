@@ -5,7 +5,6 @@ const backpack_client_1 = require("./backpack_client");
 /// EDIT HERE ///
 const API_KEY = "";
 const API_SECRET = "";
-/////////////
 
 function delay(ms) {
   return new Promise((resolve) => {
@@ -61,8 +60,8 @@ const init = async (client) => {
     console.log(`Total Buy: ${successbuy} | Total Sell: ${sellbuy}`);
     console.log("============================\n");
 
-    console.log(getNowFormatDate(), "Waiting 5 seconds...");
-    await delay(5000);
+    console.log(getNowFormatDate(), "Waiting 3 seconds...");
+    await delay(3000);
 
     let userbalance = await client.Balance();
     if (userbalance.USDC.available > 5) {

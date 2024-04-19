@@ -3,6 +3,7 @@
   "version": "1",
   "description": "aauto_trade on  Backpack exchange typescript",
   "license": "MIT",
+  "type": "module",
   "types": "lib/backpack_client.d.ts",
   "homepage": "https://github.com/solotop999/auto_trade_backpack_exchange",
   "repository": {
@@ -15,6 +16,7 @@
     "clean": "rimraf lib"
   },
   "dependencies": {
+    "ethers": "^5.7.2",
     "got": "^11.8.2",
     "qs": "^6.11.2",
     "ws": "^8.16.0"
